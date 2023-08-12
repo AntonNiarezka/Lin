@@ -1,0 +1,77 @@
+localhost:~# cd /home
+localhost:/home# mkdir animals
+localhost:/home# cd animals
+localhost:/home/animals# mkdir dogs
+localhost:/home/animals# mkdir kats
+localhost:/home/animals# mkdir fish
+localhost:/home/animals# cd /home
+localhost:/home# cd animals
+localhost:/home/animals# cd dogs
+localhost:/home/animals/dogs# touch pluto.txt
+localhost:/home/animals/dogs# cd /home
+localhost:/home# cd animals
+localhost:/home/animals# cd kats
+localhost:/home/animals/kats# touch garfild.txt
+localhost:/home/animals/kats# cd /home
+localhost:/home# cd animals
+localhost:/home/animals# cd fish
+localhost:/home/animals/fish# touch nemo.txt
+localhost:/home/animals/fish# cd /home
+localhost:/home# tree /home/
+/home/
+└── animals
+    ├── dogs
+    │   └── pluto.txt
+    ├── fish
+    │   └── nemo.txt
+    └── kats
+        └── garfild.txt
+ 
+4 directories, 3 files
+localhost:/home# mkdir planets
+localhost:/home# cd /opt
+localhost:/opt# touch Merkury.txt
+localhost:/opt# touch Venus.txt
+localhost:/opt# touch Mars.txt
+localhost:/opt# touch Jupiter.txt
+localhost:/opt# cp /opt/Merkury.txt /home/planets
+localhost:/opt# cp /opt/Venus.txt /home/planets
+localhost:/opt# cp /opt/Mars.txt /home/planets
+localhost:/opt# cp /opt/Jupiter.txt /home/planets
+localhost:/opt# cd /tmp
+localhost:/tmp# touch adam.txt
+localhost:/tmp# mkdir -p /home/humans
+localhost:/tmp# cp /tmp/adam.txt /home/humans
+localhost:/tmp# touch evA.txt
+localhost:/tmp# mv /tmp/evA.txt /opt/eve.txt
+localhost:/tmp# mv /opt/eve.txt /home/humans
+localhost:/tmp# tree /home/
+/home/
+├── animals
+│   ├── dogs
+│   │   └── pluto.txt
+│   ├── fish
+│   │   └── nemo.txt
+│   └── kats
+│       └── garfild.txt 
+├── humans
+│   ├── adam.txt
+│   └── eve.txt
+└── planets
+    ├── Jupiter.txt
+    ├── Mars.txt
+    ├── Merkury.txt
+    └── Venus.txt
+ 
+6 directories, 9 files
+
+
+Прошу прощения.. С выгрузкой истории у меня что-то не получилось.. 
+выдает следующий результат.
+
+localhost:/home# history > historuhw1.txt
+localhost:/home# exportfile historuhw_1.txt
+sh: exportfile: not found
+
+
+
